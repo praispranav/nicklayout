@@ -1,24 +1,17 @@
-import logo from './logo.svg';
+import React from "react"
 import './App.css';
+import { Switch, Route } from "react-router-dom"
+import Surface1 from "./pages/surface1"
+import Surface4 from "./pages/surface4";
+import Surface7 from "./pages/surface7";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Switch>
+      <Route exact path="/surface4" component={Surface4} />
+      <Route exact path="/surface7" component={Surface7} />
+      <Route exact path="/" component={Surface1} />
+    </Switch>
   );
 }
 
