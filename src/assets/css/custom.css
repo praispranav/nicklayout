@@ -1,0 +1,61 @@
+.full-width-full-height {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.full-height-padding-large {
+  height: 100vh;
+  padding: 10em;
+  padding-left: 17em;
+  padding-right: 17em;
+}
+
+.line {
+  width: 50px;
+  height: 2px;
+  border-radius: 22px;
+}
+
+.button-full-width {
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  height: 4em;
+}
+
+.grey-line {
+  background: lightgrey;
+  width: 33%;
+  height: 2px;
+}
+.sidebar-content {
+  overflow: hidden;
+  border-radius: 20px;
+  border: 0px solid black;
+}
+
+.backdrop-blur {
+  background: linear-gradient(
+    180deg,
+    rgba(192, 203, 239, 0.16) 0%,
+    rgba(52, 85, 255, 0.16) 100%
+  );
+  backdrop-filter: blur(32px);
+
+  border-radius: 19px;
+}
+
+.border-radius-10px {
+  border-radius: 10px;
+}
+
+.surface4img {
+  max-height: 300px;
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.active-bg{
+    background: rgb(228, 228, 252)
+  }

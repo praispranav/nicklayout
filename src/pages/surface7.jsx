@@ -6,7 +6,7 @@ import TextInput from "../components/TextInput";
 import TextField from "@material-ui/core/TextField";
 import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
-import InputLabel from "@material-ui/core/InputLabel"
+import InputLabel from "@material-ui/core/InputLabel";
 
 function List(props) {
   return (
@@ -26,6 +26,13 @@ export default function Surface7() {
   const Name = "Pranav Kumar";
   const personalinfo = "Personal Info";
   const subtitle = "Some text Here";
+
+  const inputfield = {
+    background: "rgb(228, 228, 252)",
+    borderRadius: "10px",
+    width: "100%",
+    border: "0px solid black !important",
+  };
   return (
     <div>
       <div className="bg-dark w-100" style={{ height: "4em" }}></div>
@@ -97,81 +104,61 @@ export default function Surface7() {
                 </div>
               </div>
               <div className="my-2 mt-3">
-                {/* <label htmlFor="" className="my-2">
-                  <Typography variant="body1">
-                    <b>Name</b>
-                  </Typography>
-                </label> */}
-                    <InputLabel id="demo-simple-select-outlined-label"><b>Name</b></InputLabel>
-                    <div className="mt-2">
-                <TextInput label={"Name"} />
-
-                    </div>
+                <InputLabel id="">
+                  <b>Name</b>
+                </InputLabel>
+                <div className="mt-2">
+                  <TextInput
+                    label={"Name"}
+                    handleChange={(e) => console.log(e)}
+                    value={""}
+                  />
+                </div>
               </div>
 
               <div className="my-2 mt-3">
-                {/* <label htmlFor="" className="my-2">
-                  <Typography variant="body1">
-                    <b>Email</b>
-                  </Typography>
-                </label> */}
-                    <InputLabel id="demo-simple-select-outlined-label"><b>Email</b></InputLabel>
-                    <div className="mt-2">
-                <TextInput label={"Email"} />
-
-                    </div>
+                <InputLabel id="">
+                  <b>Email</b>
+                </InputLabel>
+                <div className="mt-2">
+                  <TextInput
+                    label={"Email"}
+                    handleChange={(e) => console.log(e)}
+                    value={""}
+                  />
+                </div>
               </div>
 
               <div className="d-flex" style={{ width: "100%" }}>
                 <div className="my-2 w-100">
-                  {/* <label htmlFor="" className="my-2 mr-1">
-                    <Typography variant="body1">
-                      <b>Register Time</b>
-                    </Typography>
-                  </label> */}
-                                  <InputLabel id="demo-simple-select-outlined-label"><b>Register Time</b></InputLabel>
+                  <InputLabel id="date">
+                    <b>Register Time</b>
+                  </InputLabel>
                   <TextField
-                    id="time"
+                    id="date"
                     variant="outlined"
                     className="w-100 mt-2"
-                    style={{
-                      background: "rgb(228, 228, 252)",
-                      borderRadius: "10px",
-                      width: "100%",
-                      border: "0px solid black !important",
-                    }}
+                    style={inputfield}
                     type="date"
                   />
                 </div>
                 <div className="my-2 w-100" style={{ marginLeft: "1em" }}>
-                  {/* <label htmlFor="" className="my-2">
-                    <Typography variant="body1">
-                      <b>Last Login Time</b>
-                    </Typography>
-                  </label> */}
-                                  <InputLabel id="demo-simple-select-outlined-label"><b>Last Login</b></InputLabel>
+                  <InputLabel id="time">
+                    <b>Last Login</b>
+                  </InputLabel>
                   <TextField
                     id="time"
                     variant="outlined"
                     className="w-100 mt-2"
-                    style={{
-                      background: "rgb(228, 228, 252)",
-                      borderRadius: "10px",
-                      width: "100%",
-                      border: "0px solid black !important",
-                    }}
+                    style={inputfield}
                     type="time"
                   />
                 </div>
               </div>
               <div className="my-2 ">
-                {/* <label htmlFor="" className="my-2">
-                  <Typography variant="body1">
-                    <b>Time Zone</b>
-                  </Typography>
-                </label> */}
-                {/* <TextInput label={"Email"} /> */}
-                <InputLabel id="demo-simple-select-outlined-label"><b>Time Zone</b></InputLabel>
+                <InputLabel id="demo-simple-select-outlined-label">
+                  <b>Time Zone</b>
+                </InputLabel>
                 <Select
                   labelId="demo-simple-select-outlined-label"
                   id="demo-simple-select-outlined"
@@ -179,16 +166,9 @@ export default function Surface7() {
                   variant="outlined"
                   className="w-100 mt-2"
                   value="None"
-                  style={{
-                    background: "rgb(228, 228, 252)",
-                    borderRadius: "10px",
-                    width: "100%",
-                    border: "0px solid black !important",
-                  }}
+                  style={inputfield}
                 >
-                  <MenuItem value="None">
-                    
-                  </MenuItem>
+                  <MenuItem value="None"></MenuItem>
                   <MenuItem value={10}>Ten</MenuItem>
                   <MenuItem value={20}>Twenty</MenuItem>
                   <MenuItem value={30}>Thirty</MenuItem>

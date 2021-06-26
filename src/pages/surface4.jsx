@@ -9,17 +9,9 @@ function Boxes(props) {
     <motion.div
       whileHover={{ scale: 1.05 }}
       style={{ width: "140px", height: "80px", borderRadius: "10px" }}
-      className="mt-5 text-primary shadow-lg bg-white"
+      className="mt-4 text-primary shadow-lg bg-white"
     >
-      <div
-        className="h-100"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          textAlign: "center",
-        }}
-      >
+      <div className="h-100 d-flex flex-column justify-content-center text-center">
         <b>
           {props.text1}
           <br />
@@ -31,14 +23,15 @@ function Boxes(props) {
 }
 
 export default function Surface4() {
-    const HeadingText1 = "Heading"
-    const TopDescription = "SEC-FS helps companies and investors to track import file such as financial reports. For quaterly and annually, companies should send many reportrs. If the stakeholders wants to search and read these reports."
-    const ButtonText = "Get Started";
-    const Image = bg1
+  const HeadingText1 = "Heading";
+  const TopDescription =
+    "SEC-FS helps companies and investors to track import file such as financial reports. For quaterly and annually, companies should send many reportrs. If the stakeholders wants to search and read these reports.";
+  const ButtonText = "Get Started";
+  const Image = bg1;
 
-    const Section2Text = "Something Here";
-    const Section3Text = "Some Another Text Here";
-    
+  const Section2Text = "Something Here";
+  const Section3Text = "Some Another Text Here";
+
   return (
     <>
       <div className="bg-dark w-100" style={{ height: "4em" }}></div>
@@ -46,9 +39,7 @@ export default function Surface4() {
       <div className="container mt-5">
         <div className="row">
           <div className="col-12 col-sm-12 col-md-6 p-5">
-            <Typography variant="h2">
-           {HeadingText1}
-            </Typography>
+            <Typography variant="h2">{HeadingText1}</Typography>
             <br />
             <Typography
               varint="body1"
@@ -57,28 +48,15 @@ export default function Surface4() {
               {TopDescription}
             </Typography>
             <br />
-            <Button
-              className="text-white bg-primary px-5 py-3"
-              style={{ borderRadius: "10px" }}
-            >
+            <Button className="text-white bg-primary px-5 py-3 border-radius-10px">
               {ButtonText}
             </Button>
           </div>
-          <div
-            className="col-12 col-sm-12 col-md-6 p-5"
-            style={{ textAlign: "center" }}
-          >
+          <div className="col-12 col-sm-12 col-md-6 p-5 text-center">
             <img
               src={Image}
-              style={{
-                maxHeight: "300px",
-                width: "100%",
-                maxWidth: "400px",
-                overflow: "hidden",
-                borderRadius: "10px",
-              }}
               alt="none"
-              className="shadow-lg"
+              className="shadow-lg surface4img border-radius-10px"
             />
           </div>
         </div>
@@ -92,27 +70,15 @@ export default function Surface4() {
               className="mx-auto"
               style={{ maxWidth: "800px", width: "100%" }}
             >
-              <div className="row" style={{ justifyContent: "space-between" }}>
+              <div className="row justify-content-evenly">
                 <div className="col-2" style={{ height: "500px" }}>
-                  <div
-                    className="d-flex h-100"
-                    style={{
-                      flexDirection: "column",
-                      justifyContent: "space-evenly",
-                      alignItems: "center",
-                    }}
-                  >
+                  <div className="d-flex h-100 flex-column justify-content-evenly align-items-center ">
                     <Boxes text1="abcdefghij kal" text2="bcd" />
                   </div>
                 </div>
                 <div className="col-2 " style={{ height: "500px" }}>
                   <div
-                    className="d-flex h-100"
-                    style={{
-                      flexDirection: "column",
-                      justifyContent: "space-evenly",
-                      alignItems: "center",
-                    }}
+                    className="d-flex h-100 flex-column justify-content-evenly align-items-center"
                   >
                     <div>
                       <Boxes />
@@ -123,12 +89,7 @@ export default function Surface4() {
                 </div>
                 <div className="col-2 " style={{ height: "500px" }}>
                   <div
-                    className="d-flex h-100"
-                    style={{
-                      flexDirection: "column",
-                      justifyContent: "space-evenly",
-                      alignItems: "center",
-                    }}
+                    className="d-flex h-100 flex-column justify-content-evenly align-items-center"
                   >
                     <div>
                       <Boxes text1="pranav Kumar" />
@@ -140,12 +101,8 @@ export default function Surface4() {
                 </div>
                 <div className="col-2" style={{ height: "500px" }}>
                   <div
-                    className="d-flex h-100"
-                    style={{
-                      flexDirection: "column",
-                      justifyContent: "space-evenly",
-                      alignItems: "center",
-                    }}
+                    className="d-flex h-100 flex-column justify-content-evenly align-items-center"
+                   
                   >
                     <div>
                       <Boxes />
@@ -155,14 +112,7 @@ export default function Surface4() {
                   </div>
                 </div>
                 <div className="col-2" style={{ height: "500px" }}>
-                  <div
-                    className="d-flex h-100"
-                    style={{
-                      flexDirection: "column",
-                      justifyContent: "space-evenly",
-                      alignItems: "center",
-                    }}
-                  >
+                  <div className="d-flex h-100 flex-column justify-content-center align-items-center">
                     <div>
                       <Boxes />
                     </div>
@@ -173,7 +123,8 @@ export default function Surface4() {
           </div>
         </div>
       </div>
-      <div className="container mt-5  p-5">
+
+      <div className="container  p-5">
         <div className="row">
           <div className="col-12" style={{ textAlign: "center" }}>
             <Typography variant="h3">{Section3Text}</Typography>
@@ -181,27 +132,15 @@ export default function Surface4() {
               className="mx-auto"
               style={{ maxWidth: "800px", width: "100%" }}
             >
-              <div className="row" style={{ justifyContent: "space-between" }}>
+              <div className="row justify-content-evenly">
                 <div className="col-2" style={{ height: "500px" }}>
-                  <div
-                    className="d-flex h-100"
-                    style={{
-                      flexDirection: "column",
-                      justifyContent: "space-evenly",
-                      alignItems: "center",
-                    }}
-                  >
+                  <div className="d-flex h-100 flex-column justify-content-evenly align-items-center ">
                     <Boxes text1="abcdefghij kal" text2="bcd" />
                   </div>
                 </div>
                 <div className="col-2 " style={{ height: "500px" }}>
                   <div
-                    className="d-flex h-100"
-                    style={{
-                      flexDirection: "column",
-                      justifyContent: "space-evenly",
-                      alignItems: "center",
-                    }}
+                    className="d-flex h-100 flex-column justify-content-evenly align-items-center"
                   >
                     <div>
                       <Boxes />
@@ -212,12 +151,7 @@ export default function Surface4() {
                 </div>
                 <div className="col-2 " style={{ height: "500px" }}>
                   <div
-                    className="d-flex h-100"
-                    style={{
-                      flexDirection: "column",
-                      justifyContent: "space-evenly",
-                      alignItems: "center",
-                    }}
+                    className="d-flex h-100 flex-column justify-content-evenly align-items-center"
                   >
                     <div>
                       <Boxes text1="pranav Kumar" />
@@ -229,12 +163,8 @@ export default function Surface4() {
                 </div>
                 <div className="col-2" style={{ height: "500px" }}>
                   <div
-                    className="d-flex h-100"
-                    style={{
-                      flexDirection: "column",
-                      justifyContent: "space-evenly",
-                      alignItems: "center",
-                    }}
+                    className="d-flex h-100 flex-column justify-content-evenly align-items-center"
+                   
                   >
                     <div>
                       <Boxes />
@@ -244,14 +174,7 @@ export default function Surface4() {
                   </div>
                 </div>
                 <div className="col-2" style={{ height: "500px" }}>
-                  <div
-                    className="d-flex h-100"
-                    style={{
-                      flexDirection: "column",
-                      justifyContent: "space-evenly",
-                      alignItems: "center",
-                    }}
-                  >
+                  <div className="d-flex h-100 flex-column justify-content-center align-items-center">
                     <div>
                       <Boxes />
                     </div>
@@ -262,6 +185,8 @@ export default function Surface4() {
           </div>
         </div>
       </div>
+     
+        
     </>
   );
 }
